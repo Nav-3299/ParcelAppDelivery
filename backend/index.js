@@ -49,21 +49,12 @@ app.post("/register", async function (req, res) {
   }
 });
 
+//..............not working...................
 // app.post("/login", async function (req, res) {
 //   console.log("Inside login Api");
 //   var {email,password}=req.body;
 //   console.log(req);
-//   // const findResult= User.find((err, docs) => {
-//   //       if(!err)
-//   //       {
-//   //           res.send(docs);
-//   //       }
-//   //       else
-//   //       {
-//   //           console.log('Error in retrieving user information!')
-//   //       }
-//   //   });
-//   // await findResult.forEach(console.dir);
+//   
   
 //   module.exports.User = (req, res, next) =>{
 //     User.find({ email: req.body.email},
@@ -145,59 +136,6 @@ app.post("/otp",function(req,res){
         .done();
 });
 
-//  app.post("/login", async function(req, res) {
-// //   // console.log("hello world");
-
-//   const { username, password } = req.body;
-// //   // console.log(username,password);
-// //   // username=JSON.stringify(username);
-// //   // console.log(username,password);
-
-// //   // return;
-//   if (!username || !password) {
-//     return res.status(422).json({ error: "all fields required" });
-//   }
-
-//   try {
-//     const userLogin = await User.findOne({ username: username });
-//     if (userLogin) {
-//       // check password
-//       const matchPass = await bcrypt.compare(password, userLogin.password);
-
-//       //set json web-token
-//       // let token = await userLogin.generateAuthToken();
-
-//       // console.log("Token: ", token);
-//       // res.cookie("token", token, {
-//         // expires: new Date(Date.now() + 2589000000),
-//         // httpOnly: true,
-//       // });
-
-//       if (!matchPass) {
-//         res.status(400).json({ message: "wrong credential" });
-//       } else {
-//         res.json({ message: `${userLogin.username} logged-in succesfully` });
-//         console.log(userLogin.name);
-//       }
-//     } else {
-//       return res.status(427).json({ error: "please try again" });
-//     }
-//   } catch (err) {
-//     console.log(err);
-//   }
-
-// //     // user.find((err, docs) => {
-// //     //     if(!err)
-// //     //     {
-// //     //         res.send(docs);
-// //     //     }
-// //     //     else
-// //     //     {
-// //     //         console.log('Error in retrieving user information!')
-// //     //     }
-// //     // });
-//  });
-// app.use("/register");
 
 
 app.listen(3000, () => {
