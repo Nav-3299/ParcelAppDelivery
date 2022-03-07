@@ -1,0 +1,13 @@
+<!-- <p>feedback works!</p> -->
+<div class="Feed_Div">
+
+<form [formGroup]="feedbackform" class="Feedback_Form" action="../../../../../Backend/index.js" method="post">
+    <h2>Feedback Form</h2>
+    <label for="email">Email</label>
+    <input type="email" name="emailid" id="emailid" formControlName="email">
+    <textarea formControlName="feedback" id="textara"></textarea>
+
+    <button type="submit" id="feed_btn" (click)="onfeedback()">SUBMIT</button>
+
+  </form>
+</div>

@@ -1,0 +1,23 @@
+<!-- <p style="color: blue;">register works!</p> -->
+<div class="RegisterDiv">
+    <form  class="RegisterForm" [formGroup]="registerForm" action="../../../../../Backend/index.js"  method="post" >
+        <h2>Registration Form</h2>
+        <label for="name">Name</label>
+        <input type="text" formControlName="name">
+
+        <label for="email">Email</label>
+        <input type="email" name="emailid" id="emailid" formControlName="email">
+
+        <label for="password">Password</label>
+        <input type="password" name="passwd" formControlName="passwd">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" formControlName="phone">
+        <button  (click)="onOtp()" class="reg_btn">Verify Otp</button>
+        <label for="otp">Enter OTP</label>
+        <input type="text" name="otp" >
+        
+        <button type="submit" (click)="onSubmit()" class="reg_btn">REGISTER</button>
+    
+    </form> 
+</div>

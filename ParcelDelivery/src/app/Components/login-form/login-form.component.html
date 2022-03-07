@@ -1,0 +1,43 @@
+<div class="Form_Div">
+
+
+  <form [formGroup]="checkoutForm" class="Login_Form" action="../../../../../Backend/index.js" method="post">
+    <h2>Login Form</h2>
+    <label for="email">Email</label>
+    <input type="email" name="emailid" id="emailid" formControlName="email">
+    <label for="password">Password</label>
+    <input type="password" name="passwd" formControlName="passwd">
+
+    <button type="submit" (click)="onSubmit()">SUBMIT</button>
+
+  </form>
+  <div class="Register" >
+   
+    <a routerLink="/register">Register</a> 
+  
+  </div>
+</div>
+
+
+<div>
+  <!-- https://reactgo.com/angular-open-link-new-tab/#:~:text=To%20open%20the%20link%20in,attribute%20with%20a%20value%20_blank%20.&text=Note%3A%20In%20the%20example%20above,to%20the%20current%20URL%20path. -->
+
+  <!-- <a href="https://www.google.com/" target="_blank">Google</a>Muzaffar Ahmad5:26 PM -->
+  <!-- import {Component, Inject} from '@angular/core';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+/* . . . */
+@Component({
+  selector: 'app-disabled-form-control',
+  template: `
+    <input [formControl]="control" placeholder="First">
+  `
+})
+export class DisabledFormControlComponent {
+  control: FormControl;
+
+  constructor(private fb: FormBuilder) {
+    this.control = fb.control({value: 'my val', disabled: true});
+  }
+} -->
+
+</div>

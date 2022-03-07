@@ -1,0 +1,13 @@
+.logoSection{
+    border: green solid 5px;
+    background-color: white;
+    display: flex;
+    /* justify-content:space-evenly; */
+}
+
+#imglogo{
+    padding: 10px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px ;
+}

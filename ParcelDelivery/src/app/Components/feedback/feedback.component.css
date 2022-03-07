@@ -1,0 +1,42 @@
+.Form_Div{
+    margin: auto;
+   width: 30rem;
+   height: 15rem;
+ 
+}
+.Feedback_Form{
+    background-color: white;
+    /* border: red solid 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 30px;
+    
+}
+
+#emailid{
+    width: 20rem;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 10px;
+    color: blue;
+}
+ #textara{
+    width: 20rem;
+    height: 15rem;
+    padding: 2px;
+    margin: 20px;
+    border-radius: 10px;
+    color: blue;
+}
+#feed_btn{
+    font-weight: bolder;
+    background-color: rgb(9, 87, 9);
+    color: aliceblue;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    /* margin-top: 2px; */
+}

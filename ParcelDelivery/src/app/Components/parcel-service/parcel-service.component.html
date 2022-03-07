@@ -1,0 +1,44 @@
+<!-- <p>parcel-service works!</p> -->
+<div class="ServiceFormDiv">
+    <form action="" enctype="multipart/form-data" [formGroup]="ServiceForm" class="ServiceForm">
+        <label for="typeOfService">Type Of Service</label>
+        <select name="ServiceType" formControlName="serviceType">
+            <option value="none">Nothing</option>
+            <option value="Delivery">Delivery</option>
+            <option value="PickUp">PickUp</option>
+            <option value="PickupAndDelivery">Both</option>
+        </select>
+        <label for="email">Email</label>
+        <input type="email" name="emailid" id="emailid" formControlName="email">
+
+        <label for="Weight">Weight</label>
+        <input type="text" formControlName="Weight">
+
+        <label for="Length">Length</label>
+        <input type="text" formControlName="Length">
+
+        <label for="Breadth">Breadth</label>
+        <input type="text" formControlName="Breadth">
+
+        <!-- upload picture -->
+        Select image to upload:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+
+        <label for="Pickupadd">Pickup Address</label>
+        <input type="text" formControlName="Pickupadd">
+
+        <label for="DropAdd">Drop Address</label>
+        <input type="text" formControlName="Dropadd">
+
+        <label for="telephone">Alternate Telephone Number</label>
+        <input type="tel" formControlName="phone">
+
+        <button  (click)="estimate()" class="btn">Estimate Cost</button>
+        <button  (click)="coupon()" class="btn">Apply Coupon
+            Rs50</button>
+       <button type="submit" (click)="book()" class="btn">BOOK AND PAY</button>
+       <button  (click)="history()" class="btn">View History</button>
+       <pre>{{str}}</pre>
+    </form>
+</div>
